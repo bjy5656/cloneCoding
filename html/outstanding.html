@@ -5,69 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>outstanding cloneCoding</title>
-  <style>
-    
-    .nav--container{
-      background-color: white;
-      border: 1px solid black;
-      display: flex;
-      width: 100%;
-      height: 50px;
-    }
-    .nav--logo{
-
-    }
-    .nav--search-box{
-      border: 1px solid black;
-      width: 300px;
-      height: 25px;
-    }
-    .nav--notice{
-      border: 1px solid black;
-      width: 500px;
-      height: 25px;
-    }
-    /* .fa-solid fa-magnifying-glass{
-      width: 30px;
-      height: 30px;
-    } */
-    .nav--notice{
-      background-color: rgb(206, 203, 203);
-    } 
-
-
-  </style>
+  <link rel="stylesheet" href="./../css/outstanding.css">
 </head>
 
 <body> <!--모니터크기 5배 높이-->
   <header>
     <nav>
-      <div class="nav--container">
-        <div class="nav--logo">
+      <div id="nav--container">
+        <div id="nav--logo" class="nav--container-item">
           <a href="https:www.google.com">
-            <img src="./logo.png" alt="">
+            <img src="./../img/logo.png" alt="">
           </a>
         </div>
-        <div class="nav--search-box">
-          <!-- <i class="fa-solid fa-magnifying-glass" width="20px" height="20px"></i> -->
-          <label for="search-box">
-            <img src="./search.png" alt="">
-            <input type="text" id="search-box" autofocus>
-          </label>
+        <div id="nav--search-box" class="nav--container-item">
+          <form action="">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">!Font Awesome Free
+                v7.0.0 by @fontawesome -
+                https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.
+                <path
+                  d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
+              </svg>
+            </button>
+            <label for="search-box">
+              <input type="text" id="search-box">
+            </label>
+          </form>
         </div>
-        <div class="nav--notice">
-          <img src="./phone.png" alt="">
-          <a href="https:www.google.com">아웃스탠딩 광고상품을 개편했습니다</a>
+        <div id="nav--notice" class="nav--container-item">
+          <div id="nav--notice-img">
+            <img src="./../img/phone.png" alt="">
+          </div>
+          <div id="nav--notice-text">
+            <a href="https:www.google.com">아웃스탠딩 광고상품을 개편했습니다</a>
+            <img src="./../img/anglebracket.png" alt="">
+          </div>
         </div>
-        <div class="nav--login-container">
+        <div id="nav--login-container" class="nav--container-item">
           <ul>
             <li>
-              <div class="nav--login">
+              <div class="nav--login-menu">
                 <a href="https:www.google.com">로그인</a>
               </div>
             </li>
             <li>
-              <div class="nav--signup">
+              <div class="nav--login-menu">
                 <a href="https:www.google.com">회원가입</a>
               </div>
             </li>
@@ -77,9 +59,9 @@
     </nav>
   </header>
   <main>
-    <div class="full-screen">
+    <div id="main--full-screen">
       <aside>
-        <div class="aside--container">
+        <div id="aside--container">
           <ul>
             <li>
               <div class="aside--posting">
@@ -135,7 +117,7 @@
         </div>
       </aside>
       <section>
-        <div class="right-screen">
+        <div id="section--right-screen">
           <div class="main--AD">
             <img src="./AD.png" alt="">
           </div>
@@ -337,6 +319,7 @@
           </footer>
         </div>
       </section>
+    </div>
   </main>
 </body>
 
